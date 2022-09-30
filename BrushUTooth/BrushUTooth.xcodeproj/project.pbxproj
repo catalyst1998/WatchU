@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B97C59228E572F40023F951 /* BrushUTooth WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2B97C59128E572F40023F951 /* BrushUTooth WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2B97C59728E572F60023F951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B97C59628E572F60023F951 /* Assets.xcassets */; };
+		2B97C59D28E572F70023F951 /* BrushUTooth WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2B97C59C28E572F70023F951 /* BrushUTooth WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2B97C5A228E572F70023F951 /* BrushUToothApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B97C5A128E572F70023F951 /* BrushUToothApp.swift */; };
+		2B97C5A428E572F70023F951 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B97C5A328E572F70023F951 /* ContentView.swift */; };
+		2B97C5A628E572F70023F951 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B97C5A528E572F70023F951 /* NotificationController.swift */; };
+		2B97C5A828E572F70023F951 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B97C5A728E572F70023F951 /* NotificationView.swift */; };
+		2B97C5AA28E572F70023F951 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B97C5A928E572F70023F951 /* ComplicationController.swift */; };
+		2B97C5AC28E572F80023F951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B97C5AB28E572F80023F951 /* Assets.xcassets */; };
+		2B97C5AF28E572F80023F951 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B97C5AE28E572F80023F951 /* Preview Assets.xcassets */; };
+		2B97C5C228E573360023F951 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B97C5C128E573360023F951 /* HealthKit.framework */; };
+		2B97C5C428E577380023F951 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B97C5C328E577380023F951 /* HealthStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B97C59328E572F40023F951 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B97C58728E572F30023F951 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B97C59028E572F40023F951;
+			remoteInfo = "BrushUTooth WatchKit App";
+		};
+		2B97C59E28E572F70023F951 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B97C58728E572F30023F951 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B97C59B28E572F70023F951;
+			remoteInfo = "BrushUTooth WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B97C5B728E572F80023F951 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2B97C59D28E572F70023F951 /* BrushUTooth WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B97C5BB28E572F80023F951 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2B97C59228E572F40023F951 /* BrushUTooth WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2B97C58D28E572F30023F951 /* BrushUTooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrushUTooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B97C59128E572F40023F951 /* BrushUTooth WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BrushUTooth WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B97C59628E572F60023F951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B97C59C28E572F70023F951 /* BrushUTooth WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BrushUTooth WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B97C5A128E572F70023F951 /* BrushUToothApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushUToothApp.swift; sourceTree = "<group>"; };
+		2B97C5A328E572F70023F951 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2B97C5A528E572F70023F951 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		2B97C5A728E572F70023F951 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		2B97C5A928E572F70023F951 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		2B97C5AB28E572F80023F951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B97C5AE28E572F80023F951 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2B97C5B028E572F80023F951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B97C5B128E572F80023F951 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		2B97C5BF28E573360023F951 /* BrushUTooth WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BrushUTooth WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		2B97C5C128E573360023F951 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		2B97C5C328E577380023F951 /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B97C59928E572F70023F951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B97C5C228E573360023F951 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B97C58628E572F30023F951 = {
+			isa = PBXGroup;
+			children = (
+				2B97C59528E572F40023F951 /* BrushUTooth WatchKit App */,
+				2B97C5A028E572F70023F951 /* BrushUTooth WatchKit Extension */,
+				2B97C58E28E572F30023F951 /* Products */,
+				2B97C5C028E573360023F951 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2B97C58E28E572F30023F951 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B97C58D28E572F30023F951 /* BrushUTooth.app */,
+				2B97C59128E572F40023F951 /* BrushUTooth WatchKit App.app */,
+				2B97C59C28E572F70023F951 /* BrushUTooth WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B97C59528E572F40023F951 /* BrushUTooth WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2B97C59628E572F60023F951 /* Assets.xcassets */,
+			);
+			path = "BrushUTooth WatchKit App";
+			sourceTree = "<group>";
+		};
+		2B97C5A028E572F70023F951 /* BrushUTooth WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2B97C5BF28E573360023F951 /* BrushUTooth WatchKit Extension.entitlements */,
+				2B97C5A128E572F70023F951 /* BrushUToothApp.swift */,
+				2B97C5A328E572F70023F951 /* ContentView.swift */,
+				2B97C5A528E572F70023F951 /* NotificationController.swift */,
+				2B97C5A728E572F70023F951 /* NotificationView.swift */,
+				2B97C5A928E572F70023F951 /* ComplicationController.swift */,
+				2B97C5AB28E572F80023F951 /* Assets.xcassets */,
+				2B97C5B028E572F80023F951 /* Info.plist */,
+				2B97C5B128E572F80023F951 /* PushNotificationPayload.apns */,
+				2B97C5AD28E572F80023F951 /* Preview Content */,
+				2B97C60A28E580E20023F951 /* model */,
+			);
+			path = "BrushUTooth WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2B97C5AD28E572F80023F951 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2B97C5AE28E572F80023F951 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2B97C5C028E573360023F951 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B97C5C128E573360023F951 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B97C60A28E580E20023F951 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2B97C5C328E577380023F951 /* HealthStore.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B97C58C28E572F30023F951 /* BrushUTooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B97C5BC28E572F80023F951 /* Build configuration list for PBXNativeTarget "BrushUTooth" */;
+			buildPhases = (
+				2B97C58B28E572F30023F951 /* Resources */,
+				2B97C5BB28E572F80023F951 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B97C59428E572F40023F951 /* PBXTargetDependency */,
+			);
+			name = BrushUTooth;
+			productName = BrushUTooth;
+			productReference = 2B97C58D28E572F30023F951 /* BrushUTooth.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		2B97C59028E572F40023F951 /* BrushUTooth WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B97C5B828E572F80023F951 /* Build configuration list for PBXNativeTarget "BrushUTooth WatchKit App" */;
+			buildPhases = (
+				2B97C58F28E572F40023F951 /* Resources */,
+				2B97C5B728E572F80023F951 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B97C59F28E572F70023F951 /* PBXTargetDependency */,
+			);
+			name = "BrushUTooth WatchKit App";
+			productName = "BrushUTooth WatchKit App";
+			productReference = 2B97C59128E572F40023F951 /* BrushUTooth WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2B97C59B28E572F70023F951 /* BrushUTooth WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B97C5B428E572F80023F951 /* Build configuration list for PBXNativeTarget "BrushUTooth WatchKit Extension" */;
+			buildPhases = (
+				2B97C59828E572F70023F951 /* Sources */,
+				2B97C59928E572F70023F951 /* Frameworks */,
+				2B97C59A28E572F70023F951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BrushUTooth WatchKit Extension";
+			productName = "BrushUTooth WatchKit Extension";
+			productReference = 2B97C59C28E572F70023F951 /* BrushUTooth WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B97C58728E572F30023F951 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					2B97C58C28E572F30023F951 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					2B97C59028E572F40023F951 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					2B97C59B28E572F70023F951 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 2B97C58A28E572F30023F951 /* Build configuration list for PBXProject "BrushUTooth" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B97C58628E572F30023F951;
+			productRefGroup = 2B97C58E28E572F30023F951 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B97C58C28E572F30023F951 /* BrushUTooth */,
+				2B97C59028E572F40023F951 /* BrushUTooth WatchKit App */,
+				2B97C59B28E572F70023F951 /* BrushUTooth WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B97C58B28E572F30023F951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B97C58F28E572F40023F951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B97C59728E572F60023F951 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B97C59A28E572F70023F951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B97C5AF28E572F80023F951 /* Preview Assets.xcassets in Resources */,
+				2B97C5AC28E572F80023F951 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B97C59828E572F70023F951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B97C5A628E572F70023F951 /* NotificationController.swift in Sources */,
+				2B97C5C428E577380023F951 /* HealthStore.swift in Sources */,
+				2B97C5A428E572F70023F951 /* ContentView.swift in Sources */,
+				2B97C5AA28E572F70023F951 /* ComplicationController.swift in Sources */,
+				2B97C5A228E572F70023F951 /* BrushUToothApp.swift in Sources */,
+				2B97C5A828E572F70023F951 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B97C59428E572F40023F951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B97C59028E572F40023F951 /* BrushUTooth WatchKit App */;
+			targetProxy = 2B97C59328E572F40023F951 /* PBXContainerItemProxy */;
+		};
+		2B97C59F28E572F70023F951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B97C59B28E572F70023F951 /* BrushUTooth WatchKit Extension */;
+			targetProxy = 2B97C59E28E572F70023F951 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2B97C5B228E572F80023F951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B97C5B328E572F80023F951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B97C5B528E572F80023F951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "BrushUTooth WatchKit Extension/BrushUTooth WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BrushUTooth WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 87BRPSS9CA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BrushUTooth WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BrushUTooth WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.csy.brushTooth.BrushUTooth.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		2B97C5B628E572F80023F951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "BrushUTooth WatchKit Extension/BrushUTooth WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BrushUTooth WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 87BRPSS9CA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BrushUTooth WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BrushUTooth WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.csy.brushTooth.BrushUTooth.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		2B97C5B928E572F80023F951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87BRPSS9CA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = BrushUTooth_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "BrushUTooth WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.csy.brushTooth.BrushUTooth.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		2B97C5BA28E572F80023F951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87BRPSS9CA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = BrushUTooth_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "BrushUTooth WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.csy.brushTooth.BrushUTooth.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		2B97C5BD28E572F80023F951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87BRPSS9CA;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.csy.brushTooth.BrushUTooth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2B97C5BE28E572F80023F951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87BRPSS9CA;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.csy.brushTooth.BrushUTooth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B97C58A28E572F30023F951 /* Build configuration list for PBXProject "BrushUTooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B97C5B228E572F80023F951 /* Debug */,
+				2B97C5B328E572F80023F951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B97C5B428E572F80023F951 /* Build configuration list for PBXNativeTarget "BrushUTooth WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B97C5B528E572F80023F951 /* Debug */,
+				2B97C5B628E572F80023F951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B97C5B828E572F80023F951 /* Build configuration list for PBXNativeTarget "BrushUTooth WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B97C5B928E572F80023F951 /* Debug */,
+				2B97C5BA28E572F80023F951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B97C5BC28E572F80023F951 /* Build configuration list for PBXNativeTarget "BrushUTooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B97C5BD28E572F80023F951 /* Debug */,
+				2B97C5BE28E572F80023F951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B97C58728E572F30023F951 /* Project object */;
+}
